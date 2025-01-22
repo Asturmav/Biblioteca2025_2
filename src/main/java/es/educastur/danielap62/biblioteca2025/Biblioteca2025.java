@@ -445,8 +445,7 @@ public class Biblioteca2025 {
             System.out.println("No hay ningún préstamo con esos datos");
         }else{
             prestamos.get(pos).setFechaDev(LocalDate.now());
-            libros.get(buscaIsbn(isbnLibro))
-              .setEjemplares(libros.get(buscaIsbn(isbnLibro)).getEjemplares()+1);
+            libros.get(buscaIsbn(isbnLibro)).setEjemplares(libros.get(buscaIsbn(isbnLibro)).getEjemplares()+1);
             prestamosHist.add(prestamos.get(pos));
             prestamos.remove(pos);
         }
